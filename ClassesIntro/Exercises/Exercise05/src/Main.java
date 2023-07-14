@@ -1,0 +1,22 @@
+import java.util.Random;
+public class Main {
+    public static void main(String[] args) {
+
+        Point a = new Point();
+        Point b = new Point();
+        int v1, v2;
+
+        Random r = new Random();
+
+        a.setXY(r.nextInt(11), r.nextInt(11));
+
+        System.out.println(a.toString());
+
+        v1 = 10+r.nextInt(11);
+        v2 = 10+r.nextInt(11);
+
+        b.x=v1;
+        b.y=v2;
+        System.out.println(b.toString());
+    }
+}
